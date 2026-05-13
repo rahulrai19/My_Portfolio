@@ -539,6 +539,14 @@ h1, h2, h3, h4, .logo {
     display: flex;
     flex-direction: column;
     height: 100%;
+    padding: 2rem;
+    transition: var(--transition);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(139, 92, 246, 0.3);
+    box-shadow: 0 10px 40px rgba(139, 92, 246, 0.1);
 }
 
 .project-content {
@@ -568,7 +576,6 @@ h1, h2, h3, h4, .logo {
     color: var(--text-muted);
     font-size: 0.95rem;
     margin-bottom: 1.5rem;
-    flex: 1;
 }
 
 .tech-tags {
@@ -590,8 +597,9 @@ h1, h2, h3, h4, .logo {
 .card-links {
     display: flex;
     gap: 1.5rem;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     border-top: 1px solid var(--border);
+    margin-top: auto;
 }
 
 .card-link {
